@@ -1,0 +1,40 @@
+#grid-container {
+  display: inline-grid;
+  
+  border: 5px solid black;
+  padding: 0;
+  margin: 0;
+}
+
+.square {
+    background: white;
+    border: 1px solid black;
+    margin: 0;
+}
+
+.grid-10x10 {
+    grid-template-columns: repeat(10, auto);
+}
+
+.grid-10x10 > .square {
+    height: 47px;
+    width: 47px;
+}
+
+.grid-20x20 {
+    grid-template-columns: repeat(20, auto);
+}
+
+.grid-20x20 > .square {
+    height: 22.5px;
+    width: 22.5px;
+}
+
+.grid-30x30 {
+    grid-template-columns: repeat(30, auto);
+}
+
+.grid-30x30 > .square {
+    height: 14.33333px;
+    width: 14.33333px;
+}
