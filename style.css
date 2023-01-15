@@ -1,14 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto", "Time News Roman";
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.container {
+    background-color: rgb(48, 48, 48);
+    border-radius: 5px;
+
+}
+
+#intro-container {
+    color: white;
+    width: 100px;
+    padding: 20px;
+    height: 540px;
+}
+
 #grid-container {
-  display: inline-grid;
-  
-  border: 5px solid black;
-  padding: 0;
-  margin: 0;
+    padding: 20px;
+}
+
+#buttons-container {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 540px;
+    gap: 30px;
+    align-items: center;
+
+    padding: 20px;
+}
+
+#buttons-container > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: white;
+    text-align: center;
+}
+
+#grid {
+    display: inline-grid;
+    
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
 }
 
 .square {
     background: white;
-    border: 1px solid black;
+    border: 0.5px solid rgb(170, 168, 168);
     margin: 0;
 }
 
@@ -17,8 +71,8 @@
 }
 
 .grid-10x10 > .square {
-    height: 47px;
-    width: 47px;
+    height: 48px;
+    width: 48px;
 }
 
 .grid-20x20 {
@@ -26,8 +80,8 @@
 }
 
 .grid-20x20 > .square {
-    height: 22.5px;
-    width: 22.5px;
+    height: 23.5px;
+    width: 23.5px;
 }
 
 .grid-30x30 {
@@ -35,6 +89,19 @@
 }
 
 .grid-30x30 > .square {
-    height: 14.33333px;
-    width: 14.33333px;
+    height: 15.33333px;
+    width: 15.33333px;
+}
+
+button {
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    padding: 8px 0;
+    width: 170px;
+}
+
+.penColor {
+    height: 100px;
+    width: 100px;
+    border: 1px solid white;
 }

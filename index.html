@@ -9,19 +9,32 @@
     <script src = "./script.js" defer></script>
 </head>
 <body>
-    <div class = "title"> Etch-A-Sketch </div>
-    <div class = "description"> This is EAS </div>
-
-    <div class = "buttons">
-        <button class = "extendGrid" id = "10">10x10</button>
-        <button class = "extendGrid" id = "20">20x20</button>
-        <button class = "extendGrid" id = "30">30x30</button>
-        <button class = "changeColor" id = "black">Black</button>
-        <button class = "changeColor" id = "blue">Blue</button>
-        <button class = "eraseColor">Erase</button>
-        <button class = "clear">Clear</button>
+    <div class = "introduction container" id = "intro-container">
+        <div class = "title"> Etch-A-Sketch </div>
+        <div class = "description"> This is EAS </div>
     </div>
 
-    <div id = "grid-container"></div>
+    <div class = "grid container" id = "grid-container">
+        <div id = "grid"></div>
+    </div>
+
+    <div class = "buttons container" id = "buttons-container">
+        <div>
+            <div> Grid size: </div>
+            <button class = "extendGrid" id = "10">10x10</button>
+            <button class = "extendGrid" id = "20">20x20</button>
+            <button class = "extendGrid" id = "30">30x30</button>
+        </div>
+        <div>
+            <div class = "penColor"></div>
+            <div style = "margin-bottom: 20px"> Pen Color</div>
+            <button class = "changeColor" id = "black">Black</button>
+            <button class = "changeColor" id = "blue">Blue</button>
+        </div>
+        <div>
+            <button class = "eraseColor">Erase</button>
+            <button class = "clear">Clear</button>
+        </div>
+    </div>
 </body>
 </html>
